@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Real-Life Example</title>
+</head>
+
+<body>
+    <h1>My Blog Post</h1>
+    <p>This is an amazing blog post about JavaScript</p>
+    <button id="like-btn">😍 Like</button>
+    <p id="like-count">Likes: 0</p>
+
+    <script>
+        let likes = 0;
+        const likeButton = document.getElementById("like-btn");
+        const likeCount =document.getElementById("like-count");
+        likeButton.addEventListener("click", function () {
+            likes += 1;
+            likeCount.innerText = `Likes: ${likes}`;
+        });
+    </script>
+</body>
+</html>
